@@ -73,6 +73,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "cinepolis"
+    }
+  },
+  "defaultProject": "cinepolis",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

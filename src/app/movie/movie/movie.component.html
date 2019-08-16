@@ -1,0 +1,6 @@
+<div>
+    <img [src]="'https://image.tmdb.org/t/p/w500/'+movie.backdrop_path" alt="">
+    <h1>{{ movie.title }} </h1>
+    <span class="text-small">Calificación {{movie.vote_average}} | Idioma: {{ movie.original_language | uppercase}}</span>
+    <p>{{ movie.overview }}</p>
+</div>

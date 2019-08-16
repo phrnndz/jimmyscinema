@@ -1,0 +1,22 @@
+<div class="wrapper">
+    <div class="gallery-container">
+        <ul *ngIf="movies$ | async as movies; else loading" [@listAnimation]="movies" class="masonry-gallery">
+            <li *ngFor="let movie of movies">
+                <a [routerLink]="movie.id">
+                    <img [src]="'https://image.tmdb.org/t/p/w500/'+movie.backdrop_path" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<ng-template #loading>
+    <ul [@listAnimation]="movies" class="masonry-gallery">
+        <li *ngFor="let movie of loadingMovies" [@listAnimation]="loadingMovies.lenght">
+
+            <img src="/assets/play.png" alt="">
+
+        </li>
+    </ul>
+
+</ng-template>

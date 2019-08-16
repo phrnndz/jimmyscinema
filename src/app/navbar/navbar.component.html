@@ -1,0 +1,5 @@
+<nav>
+    <h1 routerLink="/">JIMMYS AUTOCINEMA</h1>
+    <h2>{{ title$ | async}}</h2>
+    <button class="ripple" routerLink="movies/add" *ngIf="!router.url.includes('movies/add')">Agregar Película</button>
+</nav>

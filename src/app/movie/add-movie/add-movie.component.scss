@@ -1,0 +1,43 @@
+$color:white;
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+input {
+    margin: 20px 10px;
+    width: 90%;
+    border: 0;
+    font-size: 18px;
+    padding: 5px;
+    box-shadow: 5px 5px 0px #e95057;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+}
+
+button {
+    border: 0;
+    padding: 10px;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+@mixin placeholder {
+     ::-webkit-input-placeholder {
+        @content
+    }
+     :-moz-placeholder {
+        @content
+    }
+     ::-moz-placeholder {
+        @content
+    }
+     :-ms-input-placeholder {
+        @content
+    }
+}
+
+@include placeholder {
+    color: white;
+    font-weight: 100;
+}

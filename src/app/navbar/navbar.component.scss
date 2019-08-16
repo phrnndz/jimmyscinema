@@ -1,0 +1,33 @@
+nav {
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    ;
+    padding: 15px;
+    margin-bottom: 50px
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    height: 50;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2em;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+
+button {
+    color: #fff;
+    font: inherit;
+    background-color: #000;
+    border: solid 4px #fff;
+    padding: 20px 30px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}

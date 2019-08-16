@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body,
+main {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    font-family: 'Fjalla One', sans-serif;
+}
+
+*,
+*:before,
+*::after {
+    box-sizing: inherit;
+}
+
+main {
+    max-width: 920px;
+    margin: 0 auto;
+    color: #182848;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: orange;
+}

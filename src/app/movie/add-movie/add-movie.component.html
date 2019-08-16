@@ -1,0 +1,10 @@
+<form class="form-group" [formGroup]="movieForm" (ngSubmit)="addMovie()">
+
+    <input type="text" class="form-control" placeholder="Title" formControlName="title">
+    <input type="text" class="form-control" placeholder="Overview" formControlName="overview">
+    <input type="text" class="form-control" placeholder="Backdrop path" formControlName="backdrop_path">
+    <input type="text" class="form-control" placeholder="Vote average" formControlName="vote_average">
+
+    <button [disabled]="!movieForm.valid" type="submit">Agregar</button>
+
+</form>

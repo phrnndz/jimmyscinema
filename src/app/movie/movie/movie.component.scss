@@ -1,0 +1,14 @@
+img {
+    max-width: 400px;
+    @media (max-width: 640px) {
+        max-width: 200px;
+    }
+}
+
+div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Fjalla One', sans-serif;
+}
